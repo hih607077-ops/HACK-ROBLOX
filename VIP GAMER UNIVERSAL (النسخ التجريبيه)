@@ -1,0 +1,23 @@
+-- VIP GAMER UNIVERSAL - نسخة تجريبية
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local CoreGui = game:GetService("CoreGui")
+
+-- إشعار بسيط
+local SG = Instance.new("ScreenGui", CoreGui)
+local F = Instance.new("Frame", SG)
+F.Size = UDim2.new(0, 300, 0, 100)
+F.Position = UDim2.new(0.5, -150, 0.5, -50)
+F.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+
+local T = Instance.new("TextLabel", F)
+T.Size = UDim2.new(1, 0, 1, 0)
+T.Text = "VIP GAMER UNIVERSAL\nشغال! ✅"
+T.TextColor3 = Color3.fromRGB(0, 0, 0)
+T.TextSize = 24
+T.Font = Enum.Font.GothamBold
+
+wait(3)
+SG:Destroy()
+
+print("✅ السكربت شغال!")
